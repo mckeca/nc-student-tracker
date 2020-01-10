@@ -1,38 +1,106 @@
-.App {
+header {
+  display: flex;
+  width: 100vw;
+  color: black;
+  background-color: rgb(224, 44, 44);
+  font-weight: bold;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0;
+  border: 5px solid white;
+}
+
+#root {
+  height: 100vh;
+  background-color: black;
+}
+
+#main {
+  /* background-color: rgb(224, 44, 44); */
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 0;
+}
+
+#navbar {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(224, 44, 44);
+  font-size: large;
+  border: 2px solid white;
+}
+
+#student-list {
+  display: grid;
+  align-self: stretch;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: max-content;
+  grid-auto-rows: max-content;
+}
+
+#student-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#student-page h2 {
+  background-color: rgb(224, 44, 44);
+  color: black;
+  height: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#student-block-history {
+  list-style-type: none;
+  text-decoration: none;
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#student-block-history li {
+  background-color: rgb(224, 44, 44);
+  color: black;
+  margin-bottom: 20px;
+  width: 50%;
+  text-align: center;
+  font-size: large;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#main-display {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+#add-student-btn {
+  background-color: rgb(224, 44, 44);
+  border-radius: 25px;
+  border: 1px solid white;
+  color: black;
+  font-weight: bold;
+  height: 25px;
+  width: 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.student-card {
+  list-style-type: none;
+  text-align: center;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  background-color: rgb(224, 44, 44);
+  margin: 10px;
+  border: 2px solid white;
 }
